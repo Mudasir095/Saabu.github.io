@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, rgba(1, 53, 90, 0), rgb(10, 4, 4));
+}
+.navbar-links
+{
+    display:flex;
+}
+ul
+{
+    list-style: none;
+}
+.items
+{
+    margin-left: 30px;
+    color: white;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+}
+.logo
+{
+    margin-left: 40px;
+}
+.info
+{
+    margin-top: 100px;
+    justify-content: center;
+    animation: animate 2s  ;
+    font-size: medium;
+    text-align: center;
+}
+
+@keyframes animate
+{
+   from
+   {
+    opacity: 0.1;
+    line-height: 120px;
+   }
+   to
+   {
+    opacity: 1;
+    line-height: 20px;
+   }
+}
+.education
+{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: -100px;
+ 
+
+}
+
+.grid{
+    width:auto;
+    /* height:300px; */
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows:2fr 2fr 2fr 2fr ;
+    row-gap: 20px;
+    column-gap: 30px;
+    animation: animate 2s ;
+    justify-content: center;
+    justify-items: center;
+    /* grid-template-columns:130px 130px 130px;
+    grid-template-rows:80px 80px 80px; */
+  }
+.blocks
+{
+    width: 200px;
+    height: 70px;
+    background-color: mintcream;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 5px 3px rgb(195, 190, 190);
+
+}
+.line
+{
+    width: 250px;
+    height: 1px;
+    background-color: blue;
+}
+
+@media only screen and (max-width:950px)
+{
+    .grid{
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    .personalinfo
+    {
+        margin-top: 30px;
+    }
+    
+}
+@media only screen and (max-width:680px)
+{
+    .grid
+    {      
+        grid-template-columns: 2fr 2fr;
+    }
+    .personalinfo
+    {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:530px)
+{
+   .blocks
+   {
+    width: 150px;
+   }
+    .grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    .personalinfo
+    {
+        margin-top: 30px;
+    }
+    #collg
+    {
+        width: 300px !important;
+    }
+    .navbar
+    {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+    .navbar-links ul
+    {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: column;
+    }
+    .items
+    {
+        margin: 0%;
+        padding: 2px 0px 2px 0px;
+    }
+    .navbar-links
+    {
+        width: 100%;
+        display: none;
+    }
+    .navbar-links li
+    {
+        text-align: center;
+    }
+    .toggle-button
+    {
+        display: flex !important;
+    }
+    .navbar-links.active
+    {
+        display: flex;
+    }
+    .education
+    {
+        bottom: -130px;
+    }
+    
+
+
+
+}
+h4{
+    margin: 0px 0px 2px 8px !important;
+}
+.blocks:hover
+{
+    border: 2px solid rgb(79, 79, 249);
+}
+
+.merge
+{
+    font-size: 60px;
+    opacity: 0.2;
+    margin-top: -40px;
+    margin-left: 150px;
+    font-family:Black ops one;
+}
+@media only screen and (max-width:600px)
+{
+    .merge
+    {
+        font-size: 40px;
+        margin-top: -30px;
+    }
+}
+/* .items:hover
+{
+    background-color: rgb(249, 249, 191);
+    transition: 0.9s;
+    color: black;
+} */
+@media (max-width:400px)
+{
+    .merge
+    {
+        font-size: 32px;
+        margin-left: 110px;
+        margin-top: -20px;
+    }
+}
+.toggle-button
+{
+    position: absolute;
+    top: 1rem;
+    display:none;
+    right: 10px;
+    width: 30px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.toggle-button .bar
+{
+    width: 100%;
+    height: 3px;
+    background-color:white;
+    border-radius: 2px;
+}
+
+@keyframes faded
+{
+    0%{
+        opacity: 20%;
+    }
+    70%
+    {
+        opacity: 100%;
+    }
+}
+@keyframes fade
+{
+    0%{
+        opacity: 5%;
+    }
+    70%
+    {
+        opacity: 20%;
+    }
+}
+.animated
+{
+    animation:faded 0.6s infinite alternate;
+    font-family:Kumar One Outline, cursive;
+}
+.merge
+{
+    animation:fade 0.4s infinite alternate;
+}
+
+.navbar-links ul{
+    display: flex;
+}
+.navbar-links li a
+{
+    list-style: none;
+    color: white;
+}
+.items:hover
+{
+    background-color: gray;
+}
+ul{
+    margin: 0px;
+}
+.personalinfo
+{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    position:relative;
+    /* bottom: -1000px; */
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    
+}
+.pid
+{
+    color: white;
+}
+.wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 90px;
+    margin-left: 90px;
+}
