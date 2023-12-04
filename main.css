@@ -31,7 +31,7 @@ ul
 }
 .info
 {
-    margin-top: 100px;
+    margin-top: 0px;
     justify-content: center;
     animation: animate 2s  ;
     font-size: medium;
@@ -341,4 +341,12 @@ ul{
     background-image:url('./assets/Background.jpg');
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat;
+  }
+
+  .name
+  {
+    background-image: linear-gradient(90deg,#C33764,  #1D2671 51%);
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
