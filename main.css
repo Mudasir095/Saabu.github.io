@@ -55,11 +55,7 @@ ul
 {
     width: 100%;
     height: 150px;
-    position: absolute;
-    bottom: -100px;
- 
-
-}
+ }
 
 .grid{
     width:auto;
@@ -305,3 +301,44 @@ ul{
     margin-right: 90px;
     margin-left: 90px;
 }
+
+.footer-last {
+    background-color:black;
+    color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+     /* Align the content to the right */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Three columns */
+    gap: 20px;
+  }
+  
+  .grid-item {
+    padding: 10px;
+    text-align: center; /* Align content to the right */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
+
+  body{
+    background-image:url('./assets/Background.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat;
+  }
