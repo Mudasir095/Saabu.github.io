@@ -8,7 +8,10 @@ a{
 }
 .navbar
 {
-    background-image: linear-gradient(to right, rgba(1, 53, 90, 0), rgb(10, 4, 4));
+    background-color:#001a45;
+    box-shadow: 0 4px 8px black;
+    width: 100%;
+    z-index: 1000;
 }
 .navbar-links
 {
@@ -315,11 +318,13 @@ ul{
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Three columns */
     gap: 20px;
+    padding: 40px;
   }
   
   .grid-item {
     padding: 10px;
     text-align: center; /* Align content to the right */
+    box-shadow: 0 4px 8px black;
   }
   
   ul {
@@ -337,16 +342,15 @@ ul{
     }
   }
 
-  body{
-    background-image:url('./assets/Background.jpg');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat;
-  }
 
   .name
   {
-    background-image: linear-gradient(90deg,#C33764,  #1D2671 51%);
+    background-image: linear-gradient(90deg,#D4145A,  #FBB03B 51%);
     display: inline-block;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+  }
+  .header
+  {
+    background-color: #001a45;
   }
