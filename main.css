@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda+One");
 *{
     padding: 0px;
     margin: 0px;
@@ -356,7 +357,7 @@ ul{
   }
 
 
-  @import url("https://fonts.googleapis.com/css?family=Merienda+One");
+  
 
 html {
     background-image: url(https://images.unsplash.com/photo-1531972497489-8eb337acf6e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=193456e9385b553747a5e0f0cbc7badb&auto=format&fit=crop&w=1334&q=80);
